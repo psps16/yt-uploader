@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shorts Uploader</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2330; --muted:#5b6475; --accent:#2f6fde; --card:#f4f6fa; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12151c; --fg:#e8ebf1; --muted:#9aa3b5; --accent:#7aa7ff; --card:#1b2029; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:2rem; margin:0 0 8px; }
+  p.lead { color:var(--muted); margin-top:0; }
+  .card { background:var(--card); border-radius:12px; padding:20px 22px; margin:24px 0; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:.9rem; margin-top:40px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Shorts Uploader</h1>
+  <p class="lead">A private tool that uploads short videos to its owner's own YouTube channels.</p>
+
+  <div class="card">
+    <p><strong>What it does.</strong> Shorts Uploader runs on its owner's computer. After the owner finishes a short
+    animated video, the tool uploads it to one of the owner's YouTube channels (WhatIfology and Oddly Curious) with a
+    title, description, tags and privacy setting, using the YouTube Data API.</p>
+    <p><strong>Who it's for.</strong> Only the owner. It is not offered to the public and has no sign-up.</p>
+    <p><strong>What it accesses.</strong> Permission to upload videos, and read-only access to the channel's name and
+    ID so it can confirm each video goes to the right channel. Nothing else.</p>
+  </div>
+
+  <p>Shorts Uploader uses YouTube API Services. By using it you agree to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See our
+  <a href="privacy.html">Privacy Policy</a> and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <footer>Contact: <a href="https://github.com/psps16/yt-uploader/issues">open an issue on GitHub</a></footer>
+</main>
+</body>
+</html>
